@@ -31,19 +31,19 @@
     <div class="row mt-5">
       <div class="col-sm-3 text-center">
         <h4>TEMPERATURE GRAPH</h4>
-        <a class="btn btn-info mt-3" href="~static/pdf/graph-data-temperature.pdf">DOWNLOAD</a>
+        <a class="btn btn-info mt-3" href="/pdf/graph-data-temperature.pdf">DOWNLOAD</a>
       </div>
       <div class="col-sm-3 text-center">
         <h4>NUTRITIONAL VALUE TEST REPORT</h4>
-        <a class="btn btn-info mt-3" href="~static/pdf/nutritional-value-test-report.pdf">DOWNLOAD</a>
+        <a class="btn btn-info mt-3" href="/pdf/nutritional-value-test-report.pdf">DOWNLOAD</a>
       </div>
       <div class="col-sm-3 text-center">
         <h4>MICROBE TEST REPORT</h4>
-        <a class="btn btn-info mt-3" href="~static/pdf/microbe-test-report.pdf">DOWNLOAD</a>
+        <a class="btn btn-info mt-3" href="/pdf/microbe-test-report.pdf">DOWNLOAD</a>
       </div>
       <div class="col-sm-3 text-center">
         <h4>PURCHASE ORDER FORM</h4>
-        <a class="btn btn-info mt-3" href="~static/pdf/purchase-order.pdf">DOWNLOAD</a>
+        <a class="btn btn-info mt-3" href="/pdf/purchase-order.pdf">DOWNLOAD</a>
       </div>
     </div>
   </div>

@@ -282,9 +282,4 @@
 .section-row:last-child {
   border-bottom: none;
 }
-
-.bg-main {
-  background-color: #10b8d2;
-  border-color: #10b8d2;
-}
 </style>

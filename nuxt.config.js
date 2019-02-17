@@ -39,6 +39,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
+    '~assets/app.css',
     'bootstrap/dist/css/bootstrap.min.css'
   ],
 
@@ -52,6 +53,7 @@ module.exports = {
   plugins: [
     '~plugins/google-maps',
     '~plugins/font-awesome',
+    { src: '~plugins/ga.js', ssr: false }
   ],
 
   /*

@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+    <Notification :toast="toast" />
     <div class="row">
       <div class="col-sm-12 p-0">
         <GmapMap :center="center" :map-type-id="mapTypeId" :zoom="16">
@@ -34,13 +35,8 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <input v-model="name" type="text" class="form-control" placeholder="Name">
-              <input v-model="email" type="text" class="form-control mt-2" placeholder="First name">
-              <input
-                v-model="subject"
-                type="text"
-                class="form-control mt-2"
-                placeholder="First name"
-              >
+              <input v-model="email" type="text" class="form-control mt-2" placeholder="Email">
+              <input v-model="subject" type="text" class="form-control mt-2" placeholder="Subject">
             </div>
             <div class="col-md-6 col-sm-12">
               <textarea
@@ -54,7 +50,6 @@
           <button
             type="submit"
             class="btn btn-info btn-lg mt-2 col-sm-12 cursor-pointer"
-            @click="submitForm()"
           >
             SEND MESSAGE
           </button>
@@ -65,7 +60,12 @@
 </template>
 
 <script>
+import Notification from './../components/Notification'
+
 export default {
+  components: {
+    Notification
+  },
   data() {
     return {
       center: { lat: 1.4919, lng: 103.74329 },
@@ -74,7 +74,11 @@ export default {
       name: null,
       email: null,
       message: null,
-      subject: null
+      subject: null,
+      toast: {
+        type: '',
+        text: ''
+      }
     }
   },
   methods: {
@@ -83,6 +87,20 @@ export default {
       this.email = null
       this.message = null
       this.subject = null
+      this.$axios
+        .get('https://my-json-server.typicode.com/typicode/demo/posts')
+        .then(res => {
+          this.toast = {
+            text: 'Your request has been submitted successfully',
+            type: 'success'
+          }
+        })
+        .catch(ex => {
+          this.toast = {
+            text: 'An Unexpected error has occured',
+            type: 'danger'
+          }
+        })
     }
   }
 }
