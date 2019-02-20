@@ -49,6 +49,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Donation'
+    }
+  }
+}
+</script>
+
 <style scoped>
 p > span {
   width: 100%;

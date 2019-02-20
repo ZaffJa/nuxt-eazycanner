@@ -62,8 +62,6 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
     '@nuxtjs/pwa'
   ],
   /*
@@ -73,6 +71,9 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  router: {
+    linkExactActiveClass: 'active-link'
+  },
   /*
    ** Build configuration
    */

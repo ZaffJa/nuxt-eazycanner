@@ -81,6 +81,11 @@ export default {
       }
     }
   },
+  head() {
+    return {
+      title: 'Contact Us'
+    }
+  },
   methods: {
     submitForm() {
       this.name = null

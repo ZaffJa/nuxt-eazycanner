@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <nuxt />
+    <div class="min-container-height">
+      <nuxt />
+    </div>
     <Footer />
   </div>
 </template>
@@ -21,5 +23,9 @@ export default {
 <style>
 body {
   color: grey;
+}
+
+.min-container-height {
+  min-height: calc(80vh - 52px);
 }
 </style>

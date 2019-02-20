@@ -133,21 +133,18 @@ export default {
     display: block;
     width: 100%;
   }
-  /* .nav > #nav-check:not(:checked) + .nav-links {
-    height: 0px;
-  } */
-  /* .nav > #nav-check:checked + .nav-links {
-    height: calc(80vh - 50px);
-    overflow-y: auto;
-  } */
 }
 
 .show-dropdown {
-  height: calc(80vh - 50px);
+  height: calc(78vh - 50px);
   overflow-y: auto;
 }
 
 .hide-dropdown {
   height: 0px;
+}
+
+.active-link {
+  color: #10b8d2 !important;
 }
 </style>

@@ -72,6 +72,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Additional Details'
+    }
+  }
+}
+</script>
+
 <style scoped>
 p > span {
   width: 100%;

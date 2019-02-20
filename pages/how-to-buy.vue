@@ -91,6 +91,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'How To Buy'
+    }
+  }
+}
+</script>
+
 <style scoped>
 p > span {
   width: 100%;

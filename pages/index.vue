@@ -165,7 +165,9 @@
           Digital Timer
         </div>
         <div class="col-sm-12 section-row">
-          <a href="#" class="btn btn-info">HOW TO BUY</a>
+          <nuxt-link to="/how-to-buy" class="btn btn-info">
+            HOW TO BUY
+          </nuxt-link>
         </div>
       </div>
       <div class="row">
@@ -218,7 +220,9 @@
           Digital Timer
         </div>
         <div class="col-sm-12 section-row">
-          <a href="#" class="btn btn-info">HOW TO BUY</a>
+          <nuxt-link to="/how-to-buy" class="btn btn-info">
+            HOW TO BUY
+          </nuxt-link>
         </div>
       </div>
       <div class="row w-75 pt-5 m-auto">
@@ -265,7 +269,15 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  head() {
+    return {
+      title: 'Home'
+    }
+  }
+}
+</script>
 <style>
 .img-banner {
   height: 700px;
