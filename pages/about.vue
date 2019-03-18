@@ -17,8 +17,7 @@
         <p>
           This is achieved after studying thousands of articles and research paper, doing more than 800 experiments, discussing
           with experts from 7 countries which are United States, United Kingdom, China, Hong Kong, India, Malaysia
-          and Singapore, purchasing 2 sets of high temperature data logger and pressure data logger and through collaborating
-          with University Teknologi Malaysia (UTM) who is our technical partner.
+          and Singapore, purchasing 2 sets of high temperature data logger and pressure data logger.
         </p>
 
         <p>
@@ -48,11 +47,6 @@
         >
           Validated by independent laboratory in Malaysia
         </h5>
-        <p>
-          We are a Joint Venture company with Universiti Technologi Malaysia (www.utm.my). They are our technical partner
-          and have helped us in improving the efficiency aspect of this invented technique. We has done the following
-          test and they all passed with flying colours!
-        </p>
         <ul class="list-square">
           <li>Microbe Test – All microbe and virus has been killed using our Eazy Canner Sterilizer.</li>
           <li>
